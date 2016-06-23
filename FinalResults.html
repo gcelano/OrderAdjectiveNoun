@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Word order for adjective-noun in UD v1.3</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h3>Word order for adjective-noun in UD v1.3</h3>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>case</th>
+            <th>language</th>
+            <th>ISO</th>
+            <th>nouns</th>
+            <th>preceding adj</th>
+            <th>following adj</th>
+            <th>chi-sq.test(), R</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>UD_Arabic</td>
+            <td>ar</td>
+            <td>20636</td>
+            <td>12</td>
+            <td>20627</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 20591.03, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>UD_Bulgarian</td>
+            <td>bg</td>
+            <td>10402</td>
+            <td>10152</td>
+            <td>360</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 9121.315, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>UD_Catalan</td>
+            <td>ca</td>
+            <td>21793</td>
+            <td>4965</td>
+            <td>17581</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 7059.499, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>UD_Czech</td>
+            <td>cs</td>
+            <td>131518</td>
+            <td>125796</td>
+            <td>8221</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 103150.2, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>UD_Czech-CAC</td>
+            <td>cs_cac</td>
+            <td>52216</td>
+            <td>48886</td>
+            <td>4834</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 36123.95, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>UD_Czech-CLTT</td>
+            <td>cs_cltt</td>
+            <td>4929</td>
+            <td>4524</td>
+            <td>661</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 2878.065, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>UD_Old_Church_Slavonic</td>
+            <td>cu</td>
+            <td>1282</td>
+            <td>275</td>
+            <td>1018</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 426.952, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>UD_Danish</td>
+            <td>da</td>
+            <td>4082</td>
+            <td>3983</td>
+            <td>118</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 3642.581, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>UD_German</td>
+            <td>de</td>
+            <td>12956</td>
+            <td>12927</td>
+            <td>35</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 12822.38, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>UD_Greek</td>
+            <td>el</td>
+            <td>3561</td>
+            <td>3480</td>
+            <td>103</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 3182.844, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>UD_English</td>
+            <td>en</td>
+            <td>9304</td>
+            <td>9059</td>
+            <td>289</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 8227.739, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>UD_English-ESL</td>
+            <td>en_esl</td>
+            <td>3226</td>
+            <td>3155</td>
+            <td>83</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 2914.51, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>UD_English-LinES</td>
+            <td>en_lines</td>
+            <td>3311</td>
+            <td>3225</td>
+            <td>125</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 2868.657, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>UD_Spanish</td>
+            <td>es</td>
+            <td>17643</td>
+            <td>4636</td>
+            <td>13579</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 4390.736, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>UD_Spanish-AnCora</td>
+            <td>es_ancora</td>
+            <td>25048</td>
+            <td>7415</td>
+            <td>18813</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 4953.271, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>UD_Estonian</td>
+            <td>et</td>
+            <td>11181</td>
+            <td>11147</td>
+            <td>53</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 10989, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>UD_Basque</td>
+            <td>eu</td>
+            <td>3359</td>
+            <td>565</td>
+            <td>2829</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 1510.223, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>UD_Persian</td>
+            <td>fa</td>
+            <td>8471</td>
+            <td>582</td>
+            <td>7971</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 6383.412, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>UD_Finnish</td>
+            <td>fi</td>
+            <td>7921</td>
+            <td>7918</td>
+            <td>6</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 7900.018, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>UD_Finnish-FTB</td>
+            <td>fi_ftb</td>
+            <td>5740</td>
+            <td>5692</td>
+            <td>58</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 5520.34, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>UD_French</td>
+            <td>fr</td>
+            <td>16901</td>
+            <td>5130</td>
+            <td>12423</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 3030.129, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>UD_Irish</td>
+            <td>ga</td>
+            <td>560</td>
+            <td>7</td>
+            <td>555</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 534.3488, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>UD_Galician</td>
+            <td>gl</td>
+            <td>8392</td>
+            <td>1909</td>
+            <td>6772</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 2724.199, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>UD_Gothic</td>
+            <td>got</td>
+            <td>686</td>
+            <td>348</td>
+            <td>344</td>
+            <td>
+              <div class="alert alert-danger" role="alert">X-squared = 0.0231, df = 1, p-value = 0.8791</div>
+            </td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>UD_Ancient_Greek</td>
+            <td>grc</td>
+            <td>11603</td>
+            <td>7484</td>
+            <td>4411</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 793.8906, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>UD_Ancient_Greek-PROIEL</td>
+            <td>grc_proiel</td>
+            <td>2881</td>
+            <td>1374</td>
+            <td>1537</td>
+            <td>
+              <div class="alert alert-info" role="alert">X-squared = 9.1271, df = 1, p-value = 0.002519</div>
+            </td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>UD_Hebrew</td>
+            <td>he</td>
+            <td>5999</td>
+            <td>0</td>
+            <td>5999</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 5999, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>UD_Hindi</td>
+            <td>hi</td>
+            <td>11712</td>
+            <td>11708</td>
+            <td>4</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 11696.01, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>UD_Croatian</td>
+            <td>hr</td>
+            <td>6147</td>
+            <td>6142</td>
+            <td>9</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 6115.053, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>UD_Hungarian</td>
+            <td>hu</td>
+            <td>3539</td>
+            <td>3538</td>
+            <td>2</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 3532.005, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td>UD_Indonesian</td>
+            <td>id</td>
+            <td>2983</td>
+            <td>215</td>
+            <td>2783</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 2199.674, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>UD_Italian</td>
+            <td>it</td>
+            <td>12839</td>
+            <td>4381</td>
+            <td>8999</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 1593.866, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>33</td>
+            <td>UD_Japanese-KTC</td>
+            <td>ja_ktc</td>
+            <td>1810</td>
+            <td>1810</td>
+            <td>0</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 1810, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>34</td>
+            <td>UD_Kazakh</td>
+            <td>kk</td>
+            <td>175</td>
+            <td>175</td>
+            <td>1</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 172.0227, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>35</td>
+            <td>UD_Latin</td>
+            <td>la</td>
+            <td>3034</td>
+            <td>1887</td>
+            <td>1187</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 159.4014, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>36</td>
+            <td>UD_Latin-ITTB</td>
+            <td>la_ittb</td>
+            <td>9995</td>
+            <td>4349</td>
+            <td>5762</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 197.465, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>37</td>
+            <td>UD_Latin-PROIEL</td>
+            <td>la_proiel</td>
+            <td>3555</td>
+            <td>1967</td>
+            <td>1622</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 33.1638, df = 1, p-value = 8.471e-09</div>
+            </td>
+          </tr>
+          <tr>
+            <td>38</td>
+            <td>UD_Latvian</td>
+            <td>lv</td>
+            <td>930</td>
+            <td>930</td>
+            <td>0</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 930, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>39</td>
+            <td>UD_Dutch</td>
+            <td>nl</td>
+            <td>6637</td>
+            <td>6515</td>
+            <td>147</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 6086.975, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>UD_Dutch-LassySmall</td>
+            <td>nl_lassysmall</td>
+            <td>3707</td>
+            <td>3691</td>
+            <td>27</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 3610.784, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>41</td>
+            <td>UD_Norwegian</td>
+            <td>no</td>
+            <td>12717</td>
+            <td>12456</td>
+            <td>349</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 11447.05, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>42</td>
+            <td>UD_Polish</td>
+            <td>pl</td>
+            <td>5295</td>
+            <td>3823</td>
+            <td>1745</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 775.518, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>43</td>
+            <td>UD_Portuguese</td>
+            <td>pt</td>
+            <td>7848</td>
+            <td>2390</td>
+            <td>5719</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 1366.659, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>44</td>
+            <td>UD_Portuguese-BR</td>
+            <td>pt_br</td>
+            <td>11082</td>
+            <td>3454</td>
+            <td>7948</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 1771.271, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td>UD_Romanian</td>
+            <td>ro</td>
+            <td>7526</td>
+            <td>940</td>
+            <td>6719</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 4360.47, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td>UD_Russian</td>
+            <td>ru</td>
+            <td>8940</td>
+            <td>8817</td>
+            <td>144</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 8394.256, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>47</td>
+            <td>UD_Russian-SynTagRus</td>
+            <td>ru_syntagrus</td>
+            <td>74068</td>
+            <td>72603</td>
+            <td>1696</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 67669.86, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>48</td>
+            <td>UD_Slovenian</td>
+            <td>sl</td>
+            <td>10030</td>
+            <td>9892</td>
+            <td>209</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 9282.298, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>49</td>
+            <td>UD_Slovenian-SST</td>
+            <td>sl_sst</td>
+            <td>866</td>
+            <td>840</td>
+            <td>31</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 751.4133, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td>UD_Swedish</td>
+            <td>sv</td>
+            <td>4306</td>
+            <td>4302</td>
+            <td>9</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 4275.075, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>51</td>
+            <td>UD_Swedish-LinES</td>
+            <td>sv_lines</td>
+            <td>3366</td>
+            <td>3319</td>
+            <td>65</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 3128.994, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>52</td>
+            <td>UD_Tamil</td>
+            <td>ta</td>
+            <td>529</td>
+            <td>529</td>
+            <td>1</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 526.0075, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>53</td>
+            <td>UD_Turkish</td>
+            <td>tr</td>
+            <td>1877</td>
+            <td>1869</td>
+            <td>8</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 1845.136, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+          <tr>
+            <td>54</td>
+            <td>UD_Chinese</td>
+            <td>zh</td>
+            <td>1442</td>
+            <td>1442</td>
+            <td>0</td>
+            <td>
+              <div class="alert alert-success" role="alert">X-squared = 1442, df = 1, p-value &lt; 2.2e-16</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
